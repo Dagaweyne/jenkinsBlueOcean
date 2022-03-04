@@ -5,13 +5,13 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            echo 'Building..'
+            echo 'Building...'
           }
         }
 
         stage('ParallelBuild') {
           steps {
-            echo 'Building in paralell'
+            echo 'Building in paralell...'
           }
         }
 
@@ -20,13 +20,13 @@ pipeline {
 
     stage('Test') {
       steps {
-        echo 'testing.'
+        echo 'testing...'
       }
     }
 
     stage('Publish') {
       steps {
-        echo 'publish..'
+        echo 'publish...'
       }
     }
 
